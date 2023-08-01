@@ -10,6 +10,30 @@ In command-line interfaces, a command usually consists of a utility, flags, and 
  
 It's important to note that the usage of utilities, flags, and arguments can vary depending on the specific command-line interface, operating system, or utility being used.
 
+
+## GO
+
+### 🔷 To go to the next directory (e.g. newfolder) in the file system:
+
+In windows: 
+
+`cd newfolder`
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`cd newfolder`
+
+### 🔷 To go to the previous directory (e.g. previousfolder) in the file system:
+
+In windows: 
+`cd..`
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`cd ..`
+
+***
+
 ## PRINT
 
 ### 🔷 To print what you write in the command line:
@@ -116,7 +140,7 @@ In windows:
 
 In Unix-like systems (Linux, macOS, BSD):
 
-`cp newfile.txt tmp/files/`
+`cp newfile.txt tmp\files\`
 
 *** 
 
@@ -131,4 +155,41 @@ In windows:
 In Unix-like systems (Linux, macOS, BSD):
 
 `mv newfile.txt tmp`
+
+## REMOVE
+Please note that deleting files is a permanent action, and once a file is deleted, it cannot be easily recovered. Exercise caution when using these commands.
+
+### 🔷To remove a file (e.g. newfile.txt) in the current folder:
+
+In windows: 
+
+`del newfile.txt`
+
+or: 
+
+`erase filename.txt`
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`rm newfile.txt`
+
+### 🔷To remove several files (e.g. one.txt and two.txt) at the same time: 
+
+In windows:  
+
+`del one.txt two.txt`
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`rm one.txt two.txt`
+
+### 🔷To remove a directory (e.g. files). You have to be in the previous directory of the file system in order to do it:
+
+In windows: 
+
+`rmdir files`
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`rmdir files`
 
