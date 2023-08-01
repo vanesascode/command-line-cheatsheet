@@ -194,7 +194,7 @@ Int Linux:
 
 In windows: 
 
-`dir /s /b *game*`
+`dir /s /b *music*`
 
 - "/s" is an option that makes the command search for files in the current directory and all its subdirectories. 
 - "/b" is another option that displays only the file names without any additional information. 
