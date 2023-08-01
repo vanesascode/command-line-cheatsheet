@@ -72,9 +72,9 @@ The "-1" option ensures that each file is listed on its own line for better read
 
 In Windows: 
 
-`dir /B /A-D`
+`dir /b /a-d`
 
-The "/B" option is used to show only the bare file names without any additional information. The "/A-D" option is used to exclude directories from the listing, ensuring that only file names are shown. 
+The "/b" option is used to show only the bare file names without any additional information. The "/a-d" option is used to exclude directories from the listing, ensuring that only file names are shown. 
 
 ***
 
@@ -185,6 +185,42 @@ In macOS:
 Int Linux: 
 
 `xdg-open filename.txt`
+
+***
+
+## 🌈FIND
+
+### 🔷To find all files containing the exact name (e.g. music) that is inside the root folder. 
+
+In windows: 
+
+`dir /s /b *game*`
+
+- "/s" is an option that makes the command search for files in the current directory and all its subdirectories. 
+- "/b" is another option that displays only the file names without any additional information. 
+- "**" is a pattern that filters the results to include only files whose name includes that word. 
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`find / -name music`
+
+### 🔷To find all files containing an extension (e.g. "mp3") within the current directory and its parent.
+
+In windows: 
+
+`dir /s /b *.mp3`
+
+- "/s" is an option that makes the command search for files in the current directory and all its subdirectories. 
+- "/b" is another option that displays only the file names without any additional information. 
+- "*.mp3" is a pattern that filters the results to include only files with the ".mp3" extension. 
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`find . -name *.mp3`
+
+ - "." represents the current directory. You can replace it with a specific directory path if you want to search in a different location. 
+ - "-name" is an option that specifies the search criteria based on the file name. 
+ - "*.mp3" is a pattern that filters the results to include only files with the ".mp3" extension. 
 
 ***
 
@@ -344,5 +380,4 @@ In macOS/Linux:
 - To cancel a command that is being executed, press `ctrl + c`
 - To autocomplete a file or folder name, use the `tab key`.
 - To repeat any command you have used in the past, use the `up arrow`, and it will show you each command, one by one.
-- Use the `clear` command to "clean" the current console (it is just a scroll, but a very useful one).
 
