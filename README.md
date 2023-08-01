@@ -10,27 +10,33 @@ In command-line interfaces, a command usually consists of a utility, flags, and 
  
 It's important to note that the usage of utilities, flags, and arguments can vary depending on the specific command-line interface, operating system, or utility being used.
 
-## 🔷 To print:
+### 🔷 To print:
 
 `echo "hello world"`
 
-## 🔷 To print the current working directory:
+### 🔷 To print the current working directory:
 
 `pwd`
 
 "pwd" stands for "print working directory"
 
-## 🔷 To list the names of all files in the current directory, one file per line:
+### 🔷 To list the names of all files in the current directory, one file per line:
 
 `ls -1`
 
- The "-1" option ensures that each file is listed on its own line for better readability.
+The "-1" option ensures that each file is listed on its own line for better readability.
 
-## 🔷 To print the contents of a file (e.g. "access.log") in the current directory:
+### 🔷 To print the contents of a file (e.g. "access.log") in the current directory:
 
 `cat access.log`
 
 'cat' is short for "concatenate" and is primarily used to display the contents of one or more files. However, it can also be used to create, combine, or manipulate files.
  
+### 🔷 To print the last lines (e.g. 5) of a file (e.g. "access.log"):
+
+`tail -n 5 access.log`
+
+"tail" command displays the last part of a file or a stream of data. By default, it shows the last 10 lines.
+The "-n" option is used to specify the number of lines to be shown, in this case, 5.
 
 
