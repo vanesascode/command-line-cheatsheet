@@ -11,7 +11,7 @@ In command-line interfaces, a command usually consists of a utility, flags, and 
 It's important to note that the usage of utilities, flags, and arguments can vary depending on the specific command-line interface, operating system, or utility being used.
 
 
-## GO
+## 🌈GO
 
 ### 🔷 To go to the next directory (e.g. newfolder) in the file system:
 
@@ -34,7 +34,7 @@ In Unix-like systems (Linux, macOS, BSD):
 
 ***
 
-## PRINT
+## 🌈PRINT
 
 ### 🔷 To print what you write in the command line:
 
@@ -103,7 +103,17 @@ The "-n" option is used to specify the number of lines to be shown, in this case
 
 ***
 
-## CREATE
+## 🌈CLEAR
+
+In windows: 
+`cls`
+
+In Unix-like systems (Linux, macOS, BSD):
+`clear`
+
+***
+
+## 🌈CREATE
 
 ### 🔷 To create an empty file named (e.g. "newfile.txt") in the current working directory:
 
@@ -130,7 +140,9 @@ In Unix-like systems (Linux, macOS, BSD):
 
 The "-p" option is used to create parent directories if they don't exist. This ensures that both the "tmp" directory and the "files" directory are created if they are not already present in the current working directory.
 
-## COPY
+***
+
+## 🌈COPY
 
 ### 🔷To copy a file (e.g. newfile.txt) into a directory (e.g. tmp/files/):
 
@@ -144,7 +156,7 @@ In Unix-like systems (Linux, macOS, BSD):
 
 *** 
 
-## MOVE
+## 🌈MOVE
 
 ### 🔷To copy a file (e.g. newfile.txt) into a directory (e.g. tmp):
 
@@ -156,7 +168,27 @@ In Unix-like systems (Linux, macOS, BSD):
 
 `mv newfile.txt tmp`
 
-## REMOVE
+***
+
+## 🌈OPEN
+
+### 🔷To open a file (e.g. filename.txt) from the command prompt:
+
+In windows: 
+
+`start filename.txt`
+
+In macOS: 
+
+`open filename.txt`
+
+Int Linux: 
+
+`xdg-open filename.txt`
+
+***
+
+## 🌈REMOVE
 Please note that deleting files is a permanent action, and once a file is deleted, it cannot be easily recovered. Exercise caution when using these commands.
 
 ### 🔷To remove a file (e.g. newfile.txt) in the current folder:
@@ -219,8 +251,6 @@ In Unix-like systems (Linux, macOS, BSD):
 
 `rm -rf * .*`
 
-
- 
 Explanation: 
 - "rm" is the command used to remove or delete files and directories. 
 - "-rf" are options used with the "rm" command. "r" stands for recursive, allowing deletion of directories and their contents. "f" stands for force, which means no confirmation prompt will be given before deleting. 
@@ -254,4 +284,65 @@ In Unix-like systems (Linux, macOS, BSD):
 🔴???
 
 ***
+
+## 🌈SYSTEM MANAGEMENT
+
+### 🔷To view running processes:
+
+In windows: 
+
+`tasklist`
+
+In macOS/Linux: 
+
+`ps`
+
+***
+
+### 🔷To terminate processes: 
+
+In windows: 
+
+`taskkill`
+
+For instance, if you want to terminate a process called "notepad.exe," the command would be:
+
+`taskkill /F /IM notepad.exe`
+
+The "/F" flag is used to forcefully terminate the process, and the "/IM" flag is used to specify the image name (process name). 
+
+In macOS/Linux: 
+
+`kill`
+
+***
+
+## 🌈NETWORK-RELATED-TASKS
+
+### 🔷To check network connectivity: 
+
+`ping`
+
+### 🔷To view network configurations (and see your IP Address, for example): 
+
+In windows: 
+
+`ipconf`
+
+In macOS/Linux: 
+
+`ifconfig`
+
+### 🔷To display network statistics: 
+
+`netstat`
+
+***
+
+## 🌈TIPS 
+
+- To cancel a command that is being executed, press `ctrl + c`
+- To autocomplete a file or folder name, use the `tab key`.
+- To repeat any command you have used in the past, use the `up arrow`, and it will show you each command, one by one.
+- Use the `clear` command to "clean" the current console (it is just a scroll, but a very useful one).
 
