@@ -12,15 +12,26 @@ It's important to note that the usage of utilities, flags, and arguments can var
 
 ### 🔷 To print:
 
-`echo "hello world"`
+`echo hello world`
 
 ### 🔷 To print the current working directory:
 
+In Windows: 
+
+`cd`
+
+In Linux/mac:
+
 `pwd`
 
-"pwd" stands for "print working directory"
-
 ### 🔷 To list the names of all files in the current directory, one file per line:
+In Windows: 
+
+`dir /B`
+
+ The "/B" option is used to show only the bare file names without any additional information.
+
+In Linux/mac:
 
 `ls -1`
 
@@ -39,4 +50,14 @@ The "-1" option ensures that each file is listed on its own line for better read
 "tail" command displays the last part of a file or a stream of data. By default, it shows the last 10 lines.
 The "-n" option is used to specify the number of lines to be shown, in this case, 5.
 
+### 🔷 To create an empty file named (e.g. "newfile.txt") in the current working directory:
 
+In Linux/mac:
+
+`touch access.log`
+
+In windows: 
+
+`echo. > newfile.txt`
+
+The "echo" command redirects an empty string ("-n" prevents a newline character) to the specified file, effectively creating an empty file. 
