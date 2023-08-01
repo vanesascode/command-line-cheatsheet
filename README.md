@@ -220,7 +220,17 @@ In Unix-like systems (Linux, macOS, BSD):
 
  - "." represents the current directory. You can replace it with a specific directory path if you want to search in a different location. 
  - "-name" is an option that specifies the search criteria based on the file name. 
- - "*.mp3" is a pattern that filters the results to include only files with the ".mp3" extension. 
+ - "*.mp3" is a pattern that filters the results to include only files with the ".mp3" extension.
+
+### 🔷To print the lines that contain a word (e.g. music) in a particular file (e.g. music.txt):
+
+In windows: 
+
+`type music.txt | findstr "music"`
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`cat music.txt | grep music`
 
 ***
 
@@ -306,18 +316,6 @@ In windows:
 In Unix-like systems (Linux, macOS, BSD):
 
 `rmdir files`
-
-***
-
-### 🔷To create a symbolic link (e.g. linkfile.txt) from an original (e.g. newfile.txt) in another folder(e.g. otherfiles):
-
-In windows: 
-
-🔴???
-
-In Unix-like systems (Linux, macOS, BSD):
-
-🔴???
 
 ***
 
