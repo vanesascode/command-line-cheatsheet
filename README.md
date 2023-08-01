@@ -173,6 +173,8 @@ In Unix-like systems (Linux, macOS, BSD):
 
 `rm newfile.txt`
 
+***
+
 ### 🔷To remove several files (e.g. one.txt and two.txt) at the same time: 
 
 In windows:  
@@ -183,7 +185,53 @@ In Unix-like systems (Linux, macOS, BSD):
 
 `rm one.txt two.txt`
 
-### 🔷To remove a directory (e.g. files). You have to be in the previous directory of the file system in order to do it:
+***
+
+### 🔷To delete all the files and sub-directories recursively within a directory (e.g. files, and you are in the previous directory to it):
+
+In windows: 
+
+`rmdir /s files`
+
+When you run the "rmdir /s" command followed by the directory name, it will delete the directory and all of its contents.
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`rm -r files` 
+
+When you run the "rm -r" command followed by the directory name, it will delete the directory and everything inside it, including all files and subdirectories.
+
+***
+
+👉 If you have files starting with a dot (hidden files) in the directory you want to delete, you can modify the command accordingly:
+
+🔻**Warning**🔻: The following commands are extremely dangerous and can potentially delete important files or directories. It is highly recommended not to run this command unless you fully understand its implications. 
+
+In windows: 
+
+`del /s /q *`
+
+- "/q" is an option that suppresses the confirmation prompt, meaning it won't ask for confirmation before deleting each file. 
+- "*" is a wildcard character that matches any file name in the current directory. 
+- ".*" is another wildcard that matches any hidden files in the current directory. 
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`rm -rf * .*`
+
+
+ 
+Explanation: 
+- "rm" is the command used to remove or delete files and directories. 
+- "-rf" are options used with the "rm" command. "r" stands for recursive, allowing deletion of directories and their contents. "f" stands for force, which means no confirmation prompt will be given before deleting. 
+- "*" is a wildcard character that matches any file or directory name in the current directory. 
+- ".*" matches hidden files and directories in the current directory. 
+ 
+Combining these elements, the command "rm -rf * .*" attempts to delete all files and directories, including hidden ones, in the current directory. 
+
+***
+
+### 🔷To remove a directory (e.g. files). You have to be at least in the previous directory of the file system in order to do it:
 
 In windows: 
 
@@ -192,4 +240,18 @@ In windows:
 In Unix-like systems (Linux, macOS, BSD):
 
 `rmdir files`
+
+***
+
+### 🔷To create a symbolic link (e.g. linkfile.txt) from an original (e.g. newfile.txt) in another folder(e.g. otherfiles):
+
+In windows: 
+
+🔴???
+
+In Unix-like systems (Linux, macOS, BSD):
+
+🔴???
+
+***
 
