@@ -218,13 +218,50 @@ In Unix-like systems (Linux, macOS, BSD):
 
 In windows: 
 
+`findstr "music" music.txt`
+
+or: 
+
 `type music.txt | findstr "music"`
 
 In Unix-like systems (Linux, macOS, BSD):
 
+`grep music music.txt`
+
+or:
+
 `cat music.txt | grep music`
 
 ***
+
+
+### 🔷To print the relative file paths, one path per line for all filenames that CONTAIN with a particular word (e.g."newfile") in the current directory:
+
+
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`grep -l newfile*`
+
+- grep: The grep command is used to search for text patterns within files.
+
+- -l: This option, when used with grep, instructs it to only display the names of the files that contain the pattern, rather than the specific lines where the pattern is found.
+
+- newfile: This is the pattern or string you want to search for. In this case, it is "newfile".
+
+- *: The asterisk (*) is a wildcard that matches any file in the current directory. By using *, you are telling grep to search for the pattern "newfile" in all files within the current directory.
+
+***
+  
+### 🔷To print the relative file paths, one path per line for all filenames that STARTS with a particular word (e.g."newfile") in the current directory:
+
+In windows: 
+
+`for %I in (newfile*) do @echo %~nxI`
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`ls newfile*`
 
 ## 🌈REMOVE
 Please note that deleting files is a permanent action, and once a file is deleted, it cannot be easily recovered. Exercise caution when using these commands.
