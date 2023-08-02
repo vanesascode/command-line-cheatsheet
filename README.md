@@ -76,7 +76,7 @@ In Unix-like systems (Linux, macOS, BSD):
 
 `ls -l C:\Users`
 
--l: This is an option or flag for the ls command. It specifies that the command should produce a long listing format. In this format, each file or directory is displayed on a separate line with detailed information such as file permissions, ownership, size, and modification date.
+-l: It specifies that the command should produce a long listing format. In this format, each file or directory is displayed on a separate line with detailed information such as file permissions, ownership, size, and modification date.
 
 ***
 
@@ -132,12 +132,14 @@ In Unix-like systems (Linux, macOS, BSD):
 In windows: 
 
 `echo. > newfile.txt`
+or
+`cd > newfile.txt`
 
 The "echo" command redirects an empty string ("-n" prevents a newline character) to the specified file, effectively creating an empty file: 
 
 In Unix-like systems (Linux, macOS, BSD):
 
-`touch newfile.txt`
+`cat > newfile.txt`
 
 *** 
 ### 🔷 To create a directory (e.g. files) inside another directory (e.g. tmp) that doesn't exist either: 
