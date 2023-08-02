@@ -62,9 +62,21 @@ In windows:
 
 In Unix-like systems (Linux, macOS, BSD):
 
-`ls -1`
+`ls`
 
-The "-1" option ensures that each file is listed on its own line for better readability.
+### 🔷 To list the names of all folders and files in a particular folder and in a detailed way:
+
+In windows: 
+
+`dir C:\Users /a`
+
+The "/a" option is used to display hidden files.
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`ls -l C:\Users`
+
+-l: This is an option or flag for the ls command. It specifies that the command should produce a long listing format. In this format, each file or directory is displayed on a separate line with detailed information such as file permissions, ownership, size, and modification date.
 
 ***
 
