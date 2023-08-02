@@ -251,7 +251,7 @@ In Unix-like systems (Linux, macOS, BSD):
 
 - -l: This option, when used with grep, instructs it to only display the names of the files that contain the pattern, rather than the specific lines where the pattern is found.
 
-- *: The asterisk (*) is a wildcard that matches any file in the current directory. By using *, you are telling grep to search for the pattern "newfile" in all files within the current directory.
+- `*` is a wildcard that matches any file in the current directory. By using *, you are telling grep to search for the pattern "newfile" in all files within the current directory.
 
 ***
   
@@ -297,7 +297,7 @@ In windows:
 - /s is used to search for the pattern in all files and directories within the current directory and its subdirectories.
 - /n is used to display the line numbers along with the matching lines.
 - "word" specifies the pattern or word you want to search for.
-- * specifies that the search should be performed on all files.
+- `*` specifies that the search should be performed on all files.
  
 In Unix-like systems (Linux, macOS, BSD):
  
@@ -306,7 +306,7 @@ In Unix-like systems (Linux, macOS, BSD):
 - -r stands for "recursive", which means that grep will search for the pattern in all files and directories within the current directory and its subdirectories.
 - -n stands for "line number", which means that grep will display the line numbers along with the matching lines.
 - "word" specifies the pattern or word you want to search for.
-- * specifies that the search should be performed on all files.
+- `*` specifies that the search should be performed on all files.
  
 ***
 
@@ -370,7 +370,7 @@ In windows:
 `del /s /q /a:h *`
 
 - "/q" is an option that suppresses the confirmation prompt, meaning it won't ask for confirmation before deleting each file. 
-- "*" is a wildcard character that matches any file name in the current directory. 
+- `*` is a wildcard character that matches any file name in the current directory. 
 - `/a:h` This option specifies that the deletion should include hidden files.  
 
 In Unix-like systems (Linux, macOS, BSD):
@@ -380,7 +380,7 @@ In Unix-like systems (Linux, macOS, BSD):
 Explanation: 
 - "rm" is the command used to remove or delete files and directories. 
 - "-rf" are options used with the "rm" command. "r" stands for recursive, allowing deletion of directories and their contents. "f" stands for force, which means no confirmation prompt will be given before deleting. 
-- "*" is a wildcard character that matches any file or directory name in the current directory. 
+- `*` is a wildcard character that matches any file or directory name in the current directory. 
 - ".*" matches hidden files and directories in the current directory. 
  
 Combining these elements, the command "rm -rf * .*" attempts to delete all files and directories, including hidden ones, in the current directory. 
