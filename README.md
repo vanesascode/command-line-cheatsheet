@@ -32,6 +32,10 @@ In Unix-like systems (Linux, macOS, BSD):
 
 `cd ..`
 
+and more levels: 
+
+`cd ../../../ etc.`
+
 ***
 
 ## 🌈PRINT
@@ -104,6 +108,12 @@ In Unix-like systems (Linux, macOS, BSD):
 
 ***
 
+### 🔷 To list all the files that are javascript files: 
+
+`ls *.js`
+
+***
+
 ## 🌈CLEAR
 
 In windows: 
@@ -153,7 +163,9 @@ In windows:
 
 In Unix-like systems (Linux, macOS, BSD):
 
-`cp newfile.txt tmp\files\`
+`cp newfile.txt tmp/files/`
+
+(if the folder "files" doesn't exist inside the supposed folder "tmp", it will create a file called "files"...)
 
 *** 
 
@@ -161,7 +173,15 @@ In Unix-like systems (Linux, macOS, BSD):
 
 In Unix-like systems (Linux, macOS, BSD):
 
-cp newfile.txt ../
+`cp newfile.txt ../`
+
+***
+
+### 🔷To copy a file (e.g. newfile.txt) in the following folder (e.g. files) and put it a name (e.g. hello.txt): 
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`cp newfile.txt files/hello.txt`
 
 ***
 
