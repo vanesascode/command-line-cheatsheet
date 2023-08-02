@@ -216,6 +216,8 @@ In Unix-like systems (Linux, macOS, BSD):
 
 ### 🔷To print the lines that contain a word (e.g. music) in a particular file (e.g. music.txt):
 
+
+
 In windows: 
 
 `findstr "music" music.txt`
@@ -262,6 +264,51 @@ In windows:
 In Unix-like systems (Linux, macOS, BSD):
 
 `ls newfile*`
+
+***
+
+### 🔷 To print all matching lines (without the filename or the file path) in all files under the current directory that CONTAIN a particular string (e.g. word)
+
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`grep -r -h "word"`
+
+-r stands for "recursive", which means that grep will search for the pattern in all files and directories within the current directory and its subdirectories.
+
+-h stands for "no-filename", which means that grep will only print the matching lines without showing the file names.
+
+***
+
+### 🔷 To print all matching lines (only the filename) in all files under the current directory that CONTAIN a particular string (e.g. word)
+
+In windows: 
+
+`findstr /s /i /m "word" *`
+
+***
+
+### 🔷 To print all matching lines (with the filename) in all files under the current directory that CONTAIN a particular string (e.g. word) and the line in which it appears. 
+
+In windows: 
+
+`findstr /s /n "word" *`
+
+- /s is used to search for the pattern in all files and directories within the current directory and its subdirectories.
+- /n is used to display the line numbers along with the matching lines.
+- "word" specifies the pattern or word you want to search for.
+- * specifies that the search should be performed on all files.
+ 
+In Unix-like systems (Linux, macOS, BSD):
+ 
+`grep -r -n "word" *`
+
+- -r stands for "recursive", which means that grep will search for the pattern in all files and directories within the current directory and its subdirectories.
+- -n stands for "line number", which means that grep will display the line numbers along with the matching lines.
+- "word" specifies the pattern or word you want to search for.
+- * specifies that the search should be performed on all files.
+ 
+***
 
 ## 🌈REMOVE
 Please note that deleting files is a permanent action, and once a file is deleted, it cannot be easily recovered. Exercise caution when using these commands.
