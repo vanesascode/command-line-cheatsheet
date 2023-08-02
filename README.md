@@ -186,17 +186,9 @@ In Unix-like systems (Linux, macOS, BSD):
 
 ### 🔷To open a file (e.g. filename.txt) from the command prompt:
 
-In windows: 
+In windows & Unix-like systems (Linux, macOS, BSD):
 
 `start filename.txt`
-
-In macOS: 
-
-`open filename.txt`
-
-Int Linux: 
-
-`xdg-open filename.txt`
 
 ***
 
