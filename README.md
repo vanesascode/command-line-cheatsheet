@@ -237,7 +237,9 @@ or:
 
 ### 🔷To print the relative file paths, one path per line for all filenames that CONTAIN with a particular word (e.g."newfile") in the current directory:
 
+In windows: 
 
+`for /R %I in (*) do @echo %~dpnI | findstr /i "newfile"`
 
 In Unix-like systems (Linux, macOS, BSD):
 
@@ -246,8 +248,6 @@ In Unix-like systems (Linux, macOS, BSD):
 - grep: The grep command is used to search for text patterns within files.
 
 - -l: This option, when used with grep, instructs it to only display the names of the files that contain the pattern, rather than the specific lines where the pattern is found.
-
-- newfile: This is the pattern or string you want to search for. In this case, it is "newfile".
 
 - *: The asterisk (*) is a wildcard that matches any file in the current directory. By using *, you are telling grep to search for the pattern "newfile" in all files within the current directory.
 
