@@ -103,17 +103,6 @@ In Unix-like systems (Linux, macOS, BSD):
 'cat' is short for "concatenate" and is primarily used to display the contents of one or more files. However, it can also be used to create, combine, or manipulate files.
 
 ***
- 
-### 🔷 To print the last lines (e.g. 5) of a file (e.g. "newfile.txt"):
-
-In Unix-like systems (Linux, macOS, BSD):
-
-`tail -n 5 newfile.txt`
-
-"tail" command displays the last part of a file or a stream of data. By default, it shows the last 10 lines.
-The "-n" option is used to specify the number of lines to be shown, in this case, 5.
-
-***
 
 ## 🌈CLEAR
 
@@ -150,7 +139,7 @@ In windows:
 
 In Unix-like systems (Linux, macOS, BSD):
 
-`mkdir tmp/files` or `mkdir tmp\files`
+`mkdir tmp/files`
 
 ***
 
@@ -204,13 +193,15 @@ In windows:
 - "/s" is an option that makes the command search for files in the current directory and all its subdirectories. 
 - "/b" is another option that displays only the file names without any additional information. 
 
+In Unix-like systems (Linux, macOS, BSD):
+
+`ls *music*`
 
 ### 🔷To find all files containing an extension (e.g. "mp3") within the current directory and its parent.
 
 In windows: 
 
 `dir /s /b *.mp3`
-
 - "/s" is an option that makes the command search for files in the current directory and all its subdirectories. 
 - "/b" is another option that displays only the file names without any additional information. 
 - "*.mp3" is a pattern that filters the results to include only files with the ".mp3" extension. 
@@ -272,6 +263,10 @@ In windows:
 
 `rmdir /s files`
 
+or try:
+
+`rmdir -r files`
+
 When you run the "rmdir /s" command followed by the directory name, it will delete the directory and all of its contents.
 
 In Unix-like systems (Linux, macOS, BSD):
@@ -288,11 +283,11 @@ When you run the "rm -r" command followed by the directory name, it will delete 
 
 In windows: 
 
-`del /s /q *`
+`del /s /q /a:h *`
 
 - "/q" is an option that suppresses the confirmation prompt, meaning it won't ask for confirmation before deleting each file. 
 - "*" is a wildcard character that matches any file name in the current directory. 
-- ".*" is another wildcard that matches any hidden files in the current directory. 
+- `/a:h` This option specifies that the deletion should include hidden files.  
 
 In Unix-like systems (Linux, macOS, BSD):
 
@@ -342,13 +337,15 @@ In windows:
 
 For instance, if you want to terminate a process called "notepad.exe," the command would be:
 
-`taskkill /F /IM notepad.exe`
+`taskkill /f /im notepad.exe`
 
-The "/F" flag is used to forcefully terminate the process, and the "/IM" flag is used to specify the image name (process name). 
+The "/f" flag is used to forcefully terminate the process, and the "/im" flag is used to specify the image name (process name). 
 
 In macOS/Linux: 
 
-`kill`
+`killall -9 notepad`
+
+-9: This option specifies the signal to send. In this case, -9 sends the SIGKILL signal, which forcefully terminates the process.
 
 ***
 
@@ -362,7 +359,7 @@ In macOS/Linux:
 
 In windows: 
 
-`ipconf`
+`ipconfig`
 
 In macOS/Linux: 
 
