@@ -157,6 +157,14 @@ In Unix-like systems (Linux, macOS, BSD):
 
 *** 
 
+### 🔷To copy a file (e.g. newfile) in the previous folder: 
+
+In Unix-like systems (Linux, macOS, BSD):
+
+cp newfile.txt ../
+
+***
+
 ## 🌈MOVE
 
 ### 🔷To move a file (e.g. newfile.txt) into a directory (e.g. tmp):
