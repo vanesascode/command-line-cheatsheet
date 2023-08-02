@@ -150,9 +150,7 @@ In windows:
 
 In Unix-like systems (Linux, macOS, BSD):
 
-`mkdir -p tmp/files`
-
-The "-p" option is used to create parent directories if they don't exist. This ensures that both the "tmp" directory and the "files" directory are created if they are not already present in the current working directory.
+`mkdir tmp/files` or `mkdir tmp\files`
 
 ***
 
@@ -172,7 +170,7 @@ In Unix-like systems (Linux, macOS, BSD):
 
 ## 🌈MOVE
 
-### 🔷To copy a file (e.g. newfile.txt) into a directory (e.g. tmp):
+### 🔷To move a file (e.g. newfile.txt) into a directory (e.g. tmp):
 
 In windows: 
 
