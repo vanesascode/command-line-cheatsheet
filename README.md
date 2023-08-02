@@ -186,7 +186,7 @@ In Unix-like systems (Linux, macOS, BSD):
 
 ### 🔷To open a file (e.g. filename.txt) from the command prompt:
 
-In windows & Unix-like systems (Linux, macOS, BSD):
+In windows:
 
 `start filename.txt`
 
@@ -194,19 +194,16 @@ In windows & Unix-like systems (Linux, macOS, BSD):
 
 ## 🌈FIND
 
-### 🔷To find all files containing the exact name (e.g. music) that is inside the root folder. 
+### 🔷To find all files containing a particular word in its title (e.g. music) and that is inside the root folder. 
 
 In windows: 
 
-`dir /s /b *music*`
+`dir *music*`
 
+`dir /s /b *music*`
 - "/s" is an option that makes the command search for files in the current directory and all its subdirectories. 
 - "/b" is another option that displays only the file names without any additional information. 
-- "**" is a pattern that filters the results to include only files whose name includes that word. 
 
-In Unix-like systems (Linux, macOS, BSD):
-
-`find / -name music`
 
 ### 🔷To find all files containing an extension (e.g. "mp3") within the current directory and its parent.
 
