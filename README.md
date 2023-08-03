@@ -529,3 +529,55 @@ In macOS/Linux:
 - To autocomplete a file or folder name, use the `tab key`.
 - To repeat any command you have used in the past, use the `up arrow`, and it will show you each command, one by one.
 
+## 🌈SYMBOLS (in Linux)
+
+### 🔷; (semicolon):
+
+The `;` allows you to run multiple commands sequentially, regardless of the success or failure of the preceding command.
+
+For example:
+
+`command1 ; command2`
+
+In this case, command1 will run first, and then command2 will run regardless of the exit status of command1.
+
+### 🔷, (comma):
+
+The `,` is similar to ; in that it allows you to run multiple commands sequentially. However, unlike ;, the exit status of the preceding command is significant.
+
+For example:
+
+`command1 , command2`
+
+In this case, command1 will run first, and then command2 will run only if command1 succeeds (i.e., returns an exit status of 0).
+
+### 🔷&& (double ampersand):
+
+The `&&`  allows you to run multiple commands sequentially, but only if the preceding command succeeds (returns an exit status of 0).
+
+For example:
+
+`command1 && command2`
+
+In this case, command1 will run first, and if it succeeds, command2 will run. If command1 fails, command2 will not be executed.
+
+### 🔷| (pipe):
+
+The `|` is used to redirect the output of one command as input to another command (known as "piping").
+
+For example:
+
+`command1 | command2`
+
+In this case, the output of command1 is passed as input to command2. This is useful for chaining commands together and processing data in a pipeline.
+
+### 🔷|| (double pipe):
+
+The `||` allows you to run multiple commands sequentially, but only if the preceding command fails (returns a non-zero exit status).
+
+For example: 
+
+`command1 || command2` 
+
+In this case, command1 will run first, and if it fails, command2 will run. If command1 succeeds, command2 will not be executed.
+
