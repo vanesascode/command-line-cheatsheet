@@ -469,6 +469,20 @@ In Unix-like systems (Linux, macOS, BSD):
 
 ## 🌈SYSTEM MANAGEMENT
 
+### 🔷To display the kernel name:
+
+`uname`
+
+It stands for "Unix Name" and is typically used on Unix-like systems such as Linux or macOS.
+
+With `-a` it displays all available information about the system, including the kernel name, network node hostname, kernel release, kernel version, machine hardware name, processor type, hardware platform, and operating system.
+
+In windows: 
+
+`systeminfo` 
+
+In windows it provides detailed information about the operating system and hardware configuration of a Windows system. It will display various system information such as the operating system name, version, build number, system manufacturer, system model, processor information, installed physical memory (RAM), and more.
+
 ### 🔷To view running processes:
 
 In windows: 
