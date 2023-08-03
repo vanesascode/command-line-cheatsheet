@@ -581,3 +581,43 @@ For example:
 
 In this case, command1 will run first, and if it fails, command2 will run. If command1 succeeds, command2 will not be executed.
 
+## 🌈GIT
+
+## 🔷`git init`
+
+This will create a .git directory in the [project] directory. Make sure that the folder was successfully created (you can run the command ls -l to read the directory content in the command line).
+
+## 🔷`git status` 
+
+It is used to display the current state of the Git repository. It shows information about the files in the working directory and the staging area. It will show:
+
+- Any modified files that have not been staged for commit. (Changes not staged for commit:)
+- Any files that are staged and ready to be committed. (Changes to be committed:)
+- Any untracked files that are not yet staged, files you have just created. (Untracked files:)
+  
+
+## 🔷`git add style.css`
+
+To have Git to track a file (e.g. style.css). This process is called Staging, or moving files to the Staging index tree, meaning our changes are ready to be committed
+
+
+## 🔷`git add .`
+
+It is used to STAGE all changes in the current directory and its subdirectories for the next commit. It adds all modified files and new files to the staging area, preparing them to be included in the next commit. The `.` represents the current directory. If you only want to stage specific files or directories, you can specify their paths instead of using `.`
+
+
+## 🔷`git commit -m`
+
+The git commit command is used to save the changes made to the files in the repository. It creates a new commit with a unique identifier that represents the changes made. When you run git commit, you need to provide a commit message that describes the changes made in the commit. This message helps others understand the purpose of the commit. The commit message can be added using the -m flag followed by the message in quotes, like this: git commit -m "Commit message here". After running git commit, the changes are permanently saved in the repository's history.
+
+## 🔷`git commit -a -m` 
+
+The -a option tells Git to automatically stage all modified and deleted files before committing. This means that you don't need to explicitly use the `git add` command to stage changes before committing.
+
+## 🔷`git log`
+
+It shows a log of all commits starting from HEAD back to the initial commit. 
+
+## 🔷`git diff` 
+
+It shows the differences between two commits, two branches, or a commit and the working directory. It displays the changes made to the files in a patch format. The output of git diff includes lines that were added, modified, or deleted. By default, git diff compares the working directory with the latest commit. However, you can specify different commits or branches to compare.
