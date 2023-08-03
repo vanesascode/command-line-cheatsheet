@@ -114,6 +114,18 @@ In Unix-like systems (Linux, macOS, BSD):
 
 ***
 
+### 🔷 To view the current value of the environment variable $PATH:
+
+In windows: 
+
+`echo %PATH%`
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`echo $PATH`
+
+***
+
 ## 🌈CLEAR
 
 In windows: 
@@ -187,7 +199,7 @@ In Unix-like systems (Linux, macOS, BSD):
 
 ## 🌈MOVE
 
-### 🔷To move a file (e.g. newfile.txt) into a directory (e.g. tmp):
+### 🔷To move a file (e.g. newfile.txt) into a directory (e.g. tmp) when inside the directory you have the file:
 
 In windows: 
 
@@ -196,6 +208,34 @@ In windows:
 In Unix-like systems (Linux, macOS, BSD):
 
 `mv newfile.txt tmp`
+
+### 🔷To move a file (e.g. newfile.txt) into another directory (e.g. from documents to files) without it being necessary to be inside the directory you have the file:
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`mv /home/user/documents/newfile.txt /home/user/files/`
+
+***
+
+### 🔷To move a file (e.g. file.txt) into another directory (e.g. from documents to files) without it being necessary to be inside the directory you have the file, and to rename the file (e.g. newfile):
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`mv /home/user1/documents/file.txt /home/user1/files/newfile.txt`
+
+***
+
+## 🌈SORT
+
+### 🔷To sort the contents of a text file in alphabetical order.
+
+In windows: 
+
+`sort data.txt` 
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`sort data.txt` 
 
 ***
 
