@@ -596,9 +596,9 @@ It is used to display the current state of the Git repository. It shows informat
 - Any untracked files that are not yet staged, files you have just created. (Untracked files:)
   
 
-## 🔷`git add style.css`
+## 🔷`git add style.css`  --  `git add "*.txt"`
 
-To have Git to track a file (e.g. style.css). This process is called Staging, or moving files to the Staging index tree, meaning our changes are ready to be committed
+To have Git to track a file (e.g. style.css) or a type of file (e.g. all .txt files). This process is called Staging, or moving files to the Staging index tree, meaning our changes are ready to be committed
 
 
 ## 🔷`git add .`
@@ -621,3 +621,7 @@ It shows a log of all commits starting from HEAD back to the initial commit.
 ## 🔷`git diff` 
 
 It shows the differences between two commits, two branches, or a commit and the working directory. It displays the changes made to the files in a patch format. The output of git diff includes lines that were added, modified, or deleted. By default, git diff compares the working directory with the latest commit. However, you can specify different commits or branches to compare.
+
+## 🔷`git remote add origin https://github.com/vanesascode/project.git`
+
+It associates your local repository with a Github repository you have created.
