@@ -10,6 +10,19 @@ In command-line interfaces, a command usually consists of a utility, flags, and 
  
 It's important to note that the usage of utilities, flags, and arguments can vary depending on the specific command-line interface, operating system, or utility being used.
 
+***
+
+## 🌈HELP
+
+### 🔷 To get info about a utility (e.g. dir or ls) in the same terminal: 
+
+In windows: 
+
+`dir /?`
+
+In Unix-like systems (Linux, macOS, BSD):
+
+`ls --help`
 
 ## 🌈GO
 
